@@ -4,3 +4,6 @@
 [submodule "modules/controleonline/ui-login"]
 	path = modules/controleonline/ui-login
 	url = https://github.com/ControleOnline/ui-login.git	
+[submodule "modules/controleonline/ui-queues"]
+	path = modules/controleonline/ui-queues
+	url = https://github.com/ControleOnline/ui-queues.git		
