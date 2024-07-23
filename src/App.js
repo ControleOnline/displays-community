@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import Routes from './routers';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 window.localStorage = AsyncStorage;
-import {api} from "@controleonline/quasar-common-ui/src/api";
+import {api} from "@controleonline/ui-common/src/api";
 window.api = api;
 
 
