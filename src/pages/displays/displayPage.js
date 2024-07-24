@@ -21,7 +21,7 @@ const DisplayPage = () => {
                 // const type = await fetchDisplayType(displayId);
                 // setDisplayType(type);
 
-                const dummyDisplayType = 'production';
+                const dummyDisplayType = 'view'; //production
                 setDisplayType(dummyDisplayType);
 
                 const dummyOrders = [
