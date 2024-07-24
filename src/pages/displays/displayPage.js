@@ -106,7 +106,7 @@ const DisplayPage = () => {
                 <FlatList
                     data={orders}
                     renderItem={({ item }) => (
-                        <TouchableOpacity style={styles.orderItem} onPress={() => setSelectedOrder(item)}>
+                        <TouchableOpacity style={styles.orderItem} onPress={() => displayType === 'production' ? setSelectedOrder(item) : null}>
                             <Text style={styles.orderText}>Pedido: #{item.id}</Text>
                             <Text style={styles.orderText}>Status: {item.status}</Text>
                             <Text style={styles.orderText}>Cliente: {item.customerName}</Text>
@@ -115,9 +115,11 @@ const DisplayPage = () => {
                     keyExtractor={(item) => item.id.toString()}
                 />
             </View>
-            <View style={styles.orderDetailsContainer}>
-                {selectedOrder ? renderOrderDetails(selectedOrder) : <Text style={styles.detailsPlaceholder}>Selecione um pedido para ver os detalhes</Text>}
-            </View>
+            {displayType === 'production' && (
+                <View style={styles.orderDetailsContainer}>
+                    {selectedOrder ? renderOrderDetails(selectedOrder) : <Text style={styles.detailsPlaceholder}>Selecione um pedido para ver os detalhes</Text>}
+                </View>
+            )}
         </SafeAreaView>
     );
 };
