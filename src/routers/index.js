@@ -6,7 +6,8 @@ import OrdersPage from "../pages/orders/sales/index";
 import OrderDetails from "../pages/orders/sales/orderDetails";
 import AddProductToOrder from "../components/products/addProductToOrder";
 import Checkout from "../components/checkout/index";
-import DisplayPage from "../pages/displays/displayPage"; 
+import DisplayPage from "../pages/displays/displayPage";
+// import DisplayForm from "../pages/displays/displayForm";
 
 const Stack = createNativeStackNavigator();
 
@@ -48,6 +49,11 @@ export default function Routes() {
                 component={DisplayPage}
                 options={{ headerShown: true, title: 'Display' }}
             />
+            {/* <Stack.Screen
+                name="DisplayForm"
+                component={DisplayForm}
+                options={{ headerShown: true, title: 'Cadastro de Display' }}
+            /> */}
         </Stack.Navigator>
     );
 }
