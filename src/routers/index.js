@@ -6,7 +6,7 @@ import OrdersPage from "../pages/orders/sales/index";
 import OrderDetails from "../pages/orders/sales/orderDetails";
 import AddProductToOrder from "../components/products/addProductToOrder";
 import Checkout from "../components/checkout/index";
-import DisplayPage from "../pages/displays/displayPage";
+import DisplayPage from "@controleonline/ui-queues/react/pages/displays/displayPage";
 // import DisplayForm from "../pages/displays/displayForm";
 
 const Stack = createNativeStackNavigator();
