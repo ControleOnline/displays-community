@@ -10,9 +10,9 @@ export default function HomePage({ navigation }) {
     const handleDisplays = () => {
         navigation.navigate('DisplayPage');
     }
-    // const handleNewDisplay = () => {
-    //     navigation.navigate('');
-    // };
+    const handleNewDisplay = () => {
+        navigation.navigate('DisplayForm');
+    };
     return (
         <View style={styles.container}>
             <TouchableOpacity style={styles.wrapButton} onPress={handleOrders}>
@@ -21,9 +21,9 @@ export default function HomePage({ navigation }) {
             <TouchableOpacity style={styles.wrapButton} onPress={handleDisplays}>
                 <Text style={styles.textButton}>Displays</Text>
             </TouchableOpacity>
-            {/* <TouchableOpacity style={styles.wrapButton} onPress={handleNewDisplay}>
-                <Text style={styles.textButton}>Novo Display</Text>
-            </TouchableOpacity> */}
+            { <TouchableOpacity style={styles.wrapButton} onPress={handleNewDisplay}>
+                <Text style={styles.textButton}>Cadastrar Display</Text>
+            </TouchableOpacity>}
         </View>
 
     );
