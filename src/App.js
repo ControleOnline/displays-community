@@ -1,7 +1,7 @@
 import React from 'react';
 import { StatusBar } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
-import store from './store';
+import store from '@controleonline/ui-queues/src/store';
 import Routes from './routers';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
