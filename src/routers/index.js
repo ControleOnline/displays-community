@@ -7,7 +7,6 @@ import OrderDetails from "../pages/orders/sales/orderDetails";
 import AddProductToOrder from "../components/products/addProductToOrder";
 import Checkout from "../components/checkout/index";
 import DisplayPage from "@controleonline/ui-queues/react/pages/displays/displayPage";
-import DisplayForm from "@controleonline/ui-queues/react/pages/displays/displayForm";
 
 const Stack = createNativeStackNavigator();
 
@@ -48,10 +47,6 @@ export default function Routes() {
                 name="DisplayPage"
                 component={DisplayPage}
                 options={{ headerShown: true, title: 'Display' }}
-            />
-            <Stack.Screen name="DisplayForm"
-                component={DisplayForm}
-                options={{ title: 'Cadastrar Display' }}
             />
 
         </Stack.Navigator>
